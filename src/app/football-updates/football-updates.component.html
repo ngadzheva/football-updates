@@ -1,0 +1,42 @@
+<div class="football-charts-wrapper">
+    <h1 class="title">Football Updates</h1>
+    <nav>
+        <button
+            id="navElementId(country.ENGLAND)"
+            [class.active]="selectedCountry == country.ENGLAND"
+            (click)="toggleCountry(country.ENGLAND)"
+        >
+            {{country.ENGLAND}}
+        </button>
+        <button
+            id="navElementId(country.SPAIN)"
+            [class.active]="selectedCountry == country.SPAIN"
+            (click)="toggleCountry(country.SPAIN)"
+        >
+            {{country.SPAIN}}
+        </button>
+        <button
+            id="navElementId(country.GERMANY)"
+            [class.active]="selectedCountry == country.GERMANY"
+            (click)="toggleCountry(country.GERMANY)"
+        >
+            {{country.GERMANY}}
+        </button>
+        <button
+            id="navElementId(country.FRANCE)"
+            [class.active]="selectedCountry == country.FRANCE"
+            (click)="toggleCountry(country.FRANCE)"
+        >
+            {{country.FRANCE}}
+        </button>
+        <button
+            id="navElementId(country.ITALY)"
+            [class.active]="selectedCountry == country.ITALY"
+            (click)="toggleCountry(country.ITALY)"
+        >
+            {{country.ITALY}}
+        </button>
+    </nav>
+
+    <app-standings [country]="selectedCountry"></app-standings>
+</div>

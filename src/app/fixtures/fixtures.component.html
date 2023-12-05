@@ -1,0 +1,21 @@
+<div class="fixtures-wrapper">
+    <table *ngIf="$fixtures | async as fixtures; else loading">
+        <tbody>
+            <tr *ngFor="let fixture of fixtures">
+                <td><img class="team-logo" [src]="fixture.teams.away.logo" /></td>
+                <td>{{fixture.teams.away.name}}</td>
+                <td>{{fixture.goals.away}}</td>
+                <td>-</td>
+                <td>{{fixture.goals.home}}</td>
+                <td>{{fixture.teams.home.name}}</td>
+                <td><img class="team-logo" [src]="fixture.teams.home.logo" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ng-template #loading>
+        <mat-spinner></mat-spinner>
+    </ng-template>
+
+    <button (click)="goBack()">Back</button>
+</div>

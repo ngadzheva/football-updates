@@ -1,0 +1,33 @@
+.title {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.football-charts-wrapper nav {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 800px;
+    padding: 20px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.football-charts-wrapper nav button {
+    font-size: 18px;
+    font-weight: 550;
+    border: none;
+    background-color: rgb(255, 255, 255, 0);    
+}
+
+.football-charts-wrapper nav button:hover {
+    cursor: pointer;
+}
+
+.football-charts-wrapper nav button.active {
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+}

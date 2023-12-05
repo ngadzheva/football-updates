@@ -1,0 +1,39 @@
+.fixtures-wrapper {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.fixtures-wrapper table {
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+}
+
+.fixtures-wrapper table tbody td {
+    text-align: center;
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.fixtures-wrapper button {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 10px 80px;
+    border: 1px solid #0d6efd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.fixtures-wrapper button:hover {
+    cursor: pointer;
+}
